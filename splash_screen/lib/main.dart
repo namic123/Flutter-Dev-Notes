@@ -27,7 +27,10 @@ class HomeScreen extends StatelessWidget {
             // Css에서의 Align Items와 같은 속성
             children: [
               Image.asset('asset/img/logo.png'),
-              CircularProgressIndicator(color: Colors.white),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 28.0),
+                child: CircularProgressIndicator(color: Colors.white),
+              ),
             ],
           ),
         ));
