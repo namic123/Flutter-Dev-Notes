@@ -9,8 +9,11 @@ void main() {
   );
 }
 
+// stless -> StatelssWidget 자동 완성 단축키
 /// StatelessWidget (컴포넌트로 분리)
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,3 +29,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
