@@ -8,7 +8,9 @@ void main() {
       mainAxisAlignment: MainAxisAlignment.center, // Css에서의 Align Items와 같은 속성
       children: [
         Image.asset('asset/img/logo.png'),
-
+        CircularProgressIndicator(
+          color: Colors.white
+        ),
       ],
     ),
   )));
