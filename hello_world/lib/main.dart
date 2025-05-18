@@ -8,9 +8,12 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.black,
         body: Center(
-          child: Text("Jay's First Flutter App", style: TextStyle(
-            color: Colors.white,
-          ),),
+          child: Text(
+            "Jay's First Flutter App",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
     ),
