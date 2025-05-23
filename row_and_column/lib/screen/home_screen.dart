@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
           width: double.infinity,
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               children: colors
                   .map((e) => Container(
