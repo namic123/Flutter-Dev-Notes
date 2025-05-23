@@ -7,14 +7,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            height: 50.0,
-            width: 50.0,
-            color: Colors.red,
-          ),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.red,
+            ),
+          ],
+        ),
       ),
     );
   }
