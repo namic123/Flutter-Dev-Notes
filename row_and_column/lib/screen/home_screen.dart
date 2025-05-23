@@ -9,35 +9,52 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         body: SafeArea(
       child: Container(
-        color: Colors.black,
         width: double.infinity,
-        child: Column(children: [
-          Flexible(
-            flex: 1,
-            fit:FlexFit.tight,
-            child: Container(
-              height: 50.0,
-              width: 50.0,
-              color: Colors.red,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: colors
+                  .map((e) => Container(
+                        width: 50.0,
+                        height: 50.0,
+                        color: e,
+                      ))
+                  .toList(),
             ),
-          ),Expanded(
-
-            flex: 2,
-            child: Container(
-              height: 50.0,
-              width: 50.0,
-              color: Colors.orange,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: Colors.orange,
+                )
+              ],
             ),
-          ),Expanded(
-
-            flex: 1,
-            child: Container(
-              height: 50.0,
-              width: 50.0,
-              color: Colors.yellow,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: colors
+                  .map((e) => Container(
+                        width: 50.0,
+                        height: 50.0,
+                        color: e,
+                      ))
+                  .toList(),
             ),
-          ),
-        ]),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: Colors.green,
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     ));
   }
