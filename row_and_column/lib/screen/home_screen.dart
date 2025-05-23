@@ -18,14 +18,18 @@ class HomeScreen extends StatelessWidget {
               width: 50.0,
               color: Colors.red,
             ),
-          ),Container(
-            height: 50.0,
-            width: 50.0,
-            color: Colors.orange,
-          ),Container(
-            height: 50.0,
-            width: 50.0,
-            color: Colors.yellow,
+          ),Expanded(
+            child: Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.orange,
+            ),
+          ),Expanded(
+            child: Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.yellow,
+            ),
           ),
         ]),
       ),
