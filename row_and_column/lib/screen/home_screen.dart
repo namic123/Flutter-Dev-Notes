@@ -10,10 +10,21 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
+            // Dry - Do Not Repeat YourSelf
             Container(
               height: 50.0,
               width: 50.0,
               color: Colors.red,
+            ),
+            Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.orange,
+            ),
+            Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.orange,
             ),
           ],
         ),
