@@ -7,23 +7,28 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
-          color: Colors.black,
-          width: double.infinity,
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.max,
-              children: colors
-                  .map((e) => Container(
-                        height: 50.0,
-                        width: 50.0,
-                        color: e,
-                      ))
-                  .toList()),
-        ),
+        body: SafeArea(
+      child: Container(
+        color: Colors.black,
+        width: double.infinity,
+        child: Column(children: [
+          Expanded(
+            child: Container(
+              height: 50.0,
+              width: 50.0,
+              color: Colors.red,
+            ),
+          ),Container(
+            height: 50.0,
+            width: 50.0,
+            color: Colors.orange,
+          ),Container(
+            height: 50.0,
+            width: 50.0,
+            color: Colors.yellow,
+          ),
+        ]),
       ),
-    );
+    ));
   }
 }
